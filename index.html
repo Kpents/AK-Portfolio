@@ -1,0 +1,1881 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+  <meta charset="utf-8">
+  <title>Allen Kpentey</title>
+  <link rel="icon" type="image/x-icon" href="img/AK logo.png">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <!-- font awesome -->
+
+  <section>
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+  <!-- main css -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/responsive.css">
+  <link rel="stylesheet" type="text/css" href="css/skins/color-1.css">
+  <link rel="stylesheet" type="text/css" class="alternate-style" title="color-1" href="css/skins/color-1.css" >
+  <link rel="stylesheet" type="text/css" class="alternate-style" title="color-2" href="css/skins/color-2.css" disabled>
+  <link rel="stylesheet" type="text/css" class="alternate-style" title="color-3" href="css/skins/color-3.css" disabled>
+  <link rel="stylesheet" type="text/css" class="alternate-style" title="color-4" href="css/skins/color-4.css" disabled>
+  <link rel="stylesheet" type="text/css" class="alternate-style" title="color-5" href="css/skins/color-5.css" disabled>
+  <link rel="stylesheet" type="text/css" href="css/style-switcher.css">
+  <link rel="stylesheet" type="text/css" href="css/effect-switcher.css">
+  </section>
+</head>
+<body>
+
+<!-- preloader -->
+<!-- <div class="preloader">
+	<div class="box">
+		<div></div><div></div><div></div>
+	</div>
+</div> -->
+ <!--  header -->
+ <header class="header">
+ 	<div class="container">
+ 		<div class="row justify-content-between">
+ 			<div class="logo">
+ 				<a href="index.html">AK</a>
+				<!-- <img src="img/AK logo.svg" class="outer-shadow" alt="profile-pic"> -->
+				
+ 			</div>
+ 			<div class="hamburger-btn outer-shadow hover-in-shadow"><span></span></div>
+ 			
+ 		</div>
+ 	</div>
+ </header>
+<!--  header end -->
+
+ <!-- navigation menu -->
+ <nav class="nav-menu">
+ 	<div class="close-nav-menu outer-shadow hover-in-shadow">&times;</div>
+ 	<div class="nav-menu-inner">
+
+ 	<ul>
+ 		<li><a href="#home" class="link-item inner-shadow active" onclick="navigateTo('home')" >home</a> </li>
+ 		<li><a href="#about" class="link-item outer-shadow hover-in-shadow" onclick="navigateTo('about')">about</a></li>
+ 		<li><a href="#services" class="link-item outer-shadow hover-in-shadow" onclick="navigateTo('services')">services</a></li>
+ 		<li><a href="#portfolio" class="link-item outer-shadow hover-in-shadow"onclick="navigateTo('portfolio')">portfolio</a></li>
+ 		<li><a href="#contact" class="link-item outer-shadow hover-in-shadow"onclick="navigateTo('contact')">contact</a></li>
+		<!-- <li><a href="#blog" class="link-item outer-shadow hover-in-shadow">blog</a></li> -->
+ 	</ul>
+</div>
+ 
+ </nav>
+
+ <div class="fade-out-effect">	
+</div>
+<div class="transition-overlay" id="overlay"></div>
+
+ <!-- theme buttons -->
+<section class="theme-section">
+	
+<div class="effect-switcher outer-shadow">
+ 	<div class="effect-switcher-toggler s-icon outer-shadow hover-in-shadow">
+ 		<i class="fas fa-magic"></i>
+ 	</div>
+
+	<!-- theme effects -->
+	<h4>Theme Effects</h4>
+<center>
+<div class="theme-effects">
+ 	<span class="theme-effect-1" onclick="startSnow(); hideParticles()"><i class="fas fa-snowflake"></i></span>
+ 	<span class="theme-effect-2" onclick="stopSnow(); hideParticles()"><i class="fas fa-times"></i></span>
+	<span class="theme-effect-3" onclick="showParticles();stopSnow();"><i class="fas fa-atom"></i></span>
+	</div>
+</div>
+</center>
+
+
+<div class="style-switcher outer-shadow">
+ 	<div class="style-switcher-toggler s-icon outer-shadow hover-in-shadow">
+ 		<i class="fas fa-cog fa-spin"></i>
+ 	</div>
+	 
+<!-- theme colours -->
+<h4>Theme Colors</h4>
+<div class="colors">
+ 	<span class="color-1" onclick="setActiveStyle('color-1')"></span>
+ 	<span class="color-2" onclick="setActiveStyle('color-2')"></span>
+ 	<span class="color-3" onclick="setActiveStyle('color-3')"></span>
+ 	<span class="color-4" onclick="setActiveStyle('color-4')"></span>
+ 	<span class="color-5" onclick="setActiveStyle('color-5')"></span>
+ </div>
+
+
+ </div>
+
+ <div class="night-switcher outer-shadow">
+ 	<div class="night-switcher-toggler s-icon outer-shadow hover-in-shadow">
+ 	</div>
+ 	<div class="day-night s-icon outer-shadow hover-in-shadow" onclick="changeSnow(); toggleParticleColor()">
+ 		<i class="fas fa-moon"></i>
+	</div>
+</div>
+
+</section>
+
+<div id="particles"></div>
+
+
+<!-- home section -->
+<section class="home-section section" id="home">
+	<!-- effects -->
+	<div class="effect-wrap">
+		<div class="effect effect-1"></div>
+		<div class="effect effect-2">
+			<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+
+		</div>
+		<div class="effect effect-3"></div>
+		<div class="effect effect-4"></div>
+		<div class="effect effect-5">
+			<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+		</div>
+
+	</div>
+
+	<!-- effects end -->
+	<div class="container">
+		<!-- <div id="particles"></div> -->
+		<div class="row full-screen align-items-center">
+			
+			<div class="home-text">
+				<h3 id="fireworks-name">Allen Kpentey</h3>
+				<canvas id="fireworksCanvas"></canvas>
+
+				<h2>I am <span class="typing"></span></h2>
+				<a href="#about" onclick="navigateTo('about')" class="link-item btn-1 outer-shadow hover-in-shadow">More About Me</a>
+		</div>
+
+		<div class="home-img">
+			<div class="img-box">
+				<img src="img/4.png" class="outer-shadow" alt="profile-pic">
+			</div>
+			
+		</div>
+		
+
+
+	</div>
+
+
+</section>
+<!-- home section -->
+
+<!-- about section -->
+<section class="about-section section" id="about">
+	<div class="container">
+		<div class="row">
+			<div class="section-title">
+				<h2 data-heading ="About me">Get to know me</h2>
+				
+			</div>
+		</div>
+		<div class="row">
+			<div class="about-img">
+				<div class="img-box inner-shadow">
+					<img src="img/5.jpg" class="outer-shadow" alt="profile-pic">
+				</div>
+				<div class="social-links">
+				<a href="https://www.facebook.com/profile.php?id=100008922557341&viewas=&show_switched_toast=false&show_switched_tooltip=false&show_podcast_settings=false" class="outer-shadow hover-in-shadow"><i class="fab fa-facebook-f"></i></a>
+
+				<a href="#" class="outer-shadow hover-in-shadow"><i class="fab fa-twitter"></i></a>
+
+				<a href="https://www.instagram.com/a.kpents?r=nametag" class="outer-shadow hover-in-shadow"><i class="fab fa-instagram"></i></a>
+
+				<a href="https://www.linkedin.com/in/allenkpentey" class="outer-shadow hover-in-shadow"><i class="fab fa-linkedin-in"></i></a>
+
+				<a href="https://www.linkedin.com/in/allenkpentey" class="outer-shadow hover-in-shadow"><i class="fab fa-youtube"></i></a>
+
+			</div>
+			</div>
+
+			<!-- social links -->
+
+
+			<div class="about-info">
+				
+				<center><p>Hey there! My name is <span id="fireworks-name">Allen Kpentey.</span><span class="wave">  👋🏽</span>
+</p></center>
+				
+
+				<p>
+					
+				<br>I am a photgrapher and electrical engineering graduate from Ashesi University. I combine creativity and engineering to design solutions that are not only functional but also visually engaging.
+
+				<br><br>I am the founder of AK Studio, where I specialize in photography and videography, creating visuals that tell powerful stories. Alongside my creative work, I am deeply passionate about renewable energy, electric vehicles, and robotics, with a focus on how technology can address Africa’s unique challenges.
+
+				<br><br>I believe that STEM is a powerful driver of innovation, a tool to tackle pressing problems and unlock new opportunities. Guided by curiosity, I see myself as a lifelong learner, always eager to expand my skills, explore new technologies, and build impactful projects at the intersection of art and engineering.
+
+
+				</p>
+				<center>
+				<a href="cv.pdf" class="btn-1 outer-shadow hover-in-shadow">Download CV</a>
+   				<a href="#contact" class="link-item btn-1 outer-shadow hover-in-shadow" onclick="navigateTo('contact')"">Contact Me</a>
+				</center>
+
+			</div>
+		</div>
+
+		<!-- about tabs --> 
+		<div class="row">
+			<div class="about-tabs">
+				<span class="tab-item outer-shadow active" data-target=".skills">Skills</span>
+				<span class="tab-item" data-target=".experience">Work Experience</span>
+				<span class="tab-item" data-target=".education">Education</span>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="skills tab-content active">
+				
+				<div class="row">
+					
+				<div class="main-skill-item">
+					<h3>Programming Skills</h3>
+				</div>
+
+				
+					<!-- skill 1 -->
+					<div class="skill-item">
+						<p>Python</p>
+						<!-- <p class="label-right">50%</p> -->
+						<div class="progress inner-shadow">
+							<span>80%</span>
+							<div class="progress-bar" style="width: calc(80%)">
+								
+							</div>
+						</div>
+					</div>
+
+					<!-- skill 1 end -->
+					<!-- skill 2 -->
+					<div class="skill-item">
+						<p>Javascript</p>
+						<div class="progress inner-shadow">
+							<span>60%</span>
+							<div class="progress-bar" style="width: calc(70% - 14px)">
+								
+							</div>
+						</div>
+					</div>
+					<br>
+					<!-- skill 2 end -->
+					<!-- skill 3 -->
+					<div class="skill-item">
+						<p>Arduino</p>
+						<div class="progress inner-shadow">
+							<span>90%</span>
+							<div class="progress-bar" style="width: calc(90% - 14px)">
+							</div>
+						</div>
+					</div>
+					<!-- skill 3 end -->
+					<!-- skill 4 -->
+					<div class="skill-item">
+						<p>C</p>
+						<div class="progress inner-shadow">
+							<span>70%</span>
+							<div class="progress-bar" style="width: calc(70% - 14px)">
+							</div>
+						</div>
+
+					</div>
+					<!-- skill 4 end -->
+
+					<!-- skill 5 -->
+					<div class="skill-item">
+						<p>Matlab</p>
+						<div class="progress inner-shadow">
+							<span>70%</span>
+							<div class="progress-bar" style="width: calc(70% - 14px)">
+							</div>
+						</div>
+
+					</div>
+					<!-- skill 5 end -->
+
+					<!-- skill 6 -->
+					<div class="skill-item">
+						<p>SQL</p>
+						<div class="progress inner-shadow">
+							<span>70%</span>
+							<div class="progress-bar" style="width: calc(70% - 14px)">
+							</div>
+						</div>
+
+					</div>
+					<!-- skill 6 end -->
+
+					
+					<div class="main-skill-item">
+					<br><br>	
+					<h3>Engineering Skills</h3>
+				</div>
+
+					<div class="skill-item">
+						<p>Circuit Design</p>
+						<div class="progress inner-shadow">
+							<span>70%</span>
+							<div class="progress-bar" style="width: calc(50% - 14px)">
+							</div>
+						</div>
+					</div>
+
+					<div class="skill-item">
+						<p>CAD Design</p>
+						<div class="progress inner-shadow">
+							<span>70%</span>
+							<div class="progress-bar" style="width: calc(70% - 14px)">
+							</div>
+						</div>
+					</div>
+
+					<!-- skill 4 end -->
+					 <br><br>
+					<div class="main-skill-item">
+					<br>
+					<h3>Design Skills</h3>
+				</div>
+
+				
+
+					<!-- skill 5 -->
+					<div class="skill-item">
+						<p>Photoshop</p>
+						<div class="progress inner-shadow">
+							<span>80%</span>
+							<div class="progress-bar" style="width: calc(90% - 14px)">
+							</div>
+						</div>
+					</div>
+
+					<div class="skill-item">
+						<p>Illustarator</p>
+						<div class="progress inner-shadow">
+							<span>80%</span>
+							<div class="progress-bar" style="width: calc(80% - 14px)">
+								
+							</div>
+						</div>
+					</div>
+					<!-- skill 5 end -->
+					<!-- skill 6 -->
+					<div class="skill-item">
+						<p>Character Animator</p>
+						<div class="progress inner-shadow">
+							<span>60%</span>
+							<div class="progress-bar" style="width: calc(80% - 14px)">
+							</div>
+						</div>
+					</div>
+					<!-- skill 6 -->
+
+					<div class="skill-item">
+						<p>After effects</p>
+						<div class="progress inner-shadow">
+							<span>60%</span>
+							<div class="progress-bar" style="width: calc(70% - 14px)">
+							</div>
+						</div>
+					</div>
+
+					<!-- skill 5 end -->
+				</div>
+			</div>
+		</div>
+		<!-- skills end -->
+		<!-- experiences -->
+		<div class="row">
+			<div class="experience tab-content">
+				<div class="row">
+					<div class="timeline">
+						<div class="row">
+							
+						    <!-- timeline end -->
+
+							<div class="timeline-item">
+								<div class="timeline-item-inner outer-shadow">
+								<i class="fas fa-briefcase icon"></i> 
+								<span> June, 2017 - July, 2017</span>
+								<h3>Intern</h3>
+								<h4>Codetrain</h4>
+								<p>Mentored kids on basics of programming and introduced them to mobile development</p>
+							    </div>
+						    </div>
+
+							<!-- timeline end -->
+
+						    <div class="timeline-item">
+								<div class="timeline-item-inner outer-shadow">
+								<i class="fas fa-briefcase icon"></i> 
+								<span> February , 2021 - July, 2021</span>
+								<h3>Design</h3>
+								<h4>Firenze Organisation</h4>
+								<p>Designed comics that teach kids about the importance of STEM</div>
+						    </div>
+						    
+						    
+						    <!-- timeline end -->
+							<div class="timeline-item">
+								<div class="timeline-item-inner outer-shadow">
+								<i class="fas fa-briefcase icon"></i> 
+								<span> June, 2022 - July, 2022</span>
+								<h3>Intern</h3>
+								<h4>ECG</h4>
+								<p>Mentored kids on basics of programming and introduced them to mobile development</p>
+							    </div>
+						    </div>
+
+							<div class="timeline-item">
+								<div class="timeline-item-inner outer-shadow">
+								<i class="fas fa-briefcase icon"></i> 
+								<span> June, 2017 - July, 2017</span>
+								<h3>Intern</h3>
+								<h4>AIX Coach</h4>
+								<p>Mentored kids on basics of programming and introduced them to mobile development</p>
+							    </div>
+						    </div>
+
+							<div class="timeline-item">
+								<div class="timeline-item-inner outer-shadow">
+								<i class="fas fa-briefcase icon"></i> 
+								<span> June, 2023 - August, 2023</span>
+								<h3>Intern</h3>
+								<h4>Frost Summer Program</h4>
+								<p>Mentored kids on basics of programming and introduced them to mobile development</p>
+							    </div>
+						    </div>
+
+							<div class="timeline-item">
+								<div class="timeline-item-inner outer-shadow">
+								<i class="fas fa-briefcase icon"></i> 
+								<span> September, 2023 - August, 2024</span>
+								<h3>Resident Assistant</h3>
+								<h4>Ashesi University</h4>
+								<p>Mentored kids on basics of programming and introduced them to mobile development</p>
+							    </div>
+						    </div>
+
+							<div class="timeline-item">
+								<div class="timeline-item-inner outer-shadow">
+								<i class="fas fa-briefcase icon"></i> 
+								<span> September, 2024 - Present</span>
+								<h3>Research Assistant</h3>
+								<h4>Ashesi University</h4>
+								<p>Mentored kids on basics of programming and introduced them to mobile development</p>
+							    </div>
+						    </div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- education -->
+		<div class="row">
+			<div class="education tab-content">
+				<div class="row">
+					<div class="timeline">
+						<div class="row">
+							<!-- timeline -->
+							 <div class="timeline-item">
+								<div class="timeline-item-inner outer-shadow">
+								<i class="fas fa-graduation-cap icon"></i>
+								
+								<div class="group">
+									<span><i class="fas fa-calendar"></i> Jan 2025 - Dec 2026</span>
+								</div>
+								
+								<h3>Masters in Electrical and Computer Engineering</h3>
+								<p>Northeastern University</p>
+							    </div>
+						    </div>
+
+							<div class="timeline-item">
+								<div class="timeline-item-inner outer-shadow">
+								<i class="fas fa-graduation-cap icon"></i>
+								
+								<div class="group">
+									<span><i class="fas fa-calendar"></i> Sep 2020 - Sep 2024</span>
+								</div>
+								
+								<h3>Bachelors' in Electrical Engineering</h3>
+								<p>Ashesi University, Ghana</p>
+							    </div>
+						    </div>
+						    <!-- timeline end -->
+						    <div class="timeline-item">
+								<div class="timeline-item-inner outer-shadow">
+								<i class="fas fa-graduation-cap icon"></i> 
+								
+								<div class="group">
+									<span><i class="fas fa-calendar"></i> Sep 2018 - May, 2020</span>
+								</div>
+
+								<h3>IB Diploma</h3>
+								<p>SOS- Hermann Gmneiner International College</p>
+								<p>Tema, Ghana</p>
+								<br>
+
+								<h2><i class="fas fa-book"></i>  Subjects</h2>
+								<p>Computer Science HL</p>
+								<p>Economics HL</p>
+								<p>Physics HL</p>
+								<p>Math SL<p>
+								<p>French SL</p>
+								<p>Literature SL</p>
+								<br>
+								<p>*HL = Higher Level</p>
+								<p>*SL = Standard Level</p>
+
+
+							    </div>
+						    </div>
+						    <!-- timeline end -->
+						    <div class="timeline-item">
+								<div class="timeline-item-inner outer-shadow">
+								<i class="fas fa-graduation-cap icon"></i> 
+
+								<div class="group">
+									<span><i class="fas fa-calendar"></i>  Sep, 2016 - Jun, 2018</span>
+								</div>
+
+								<h3>IGCSE Certificate</h3>
+								<p>SOS- Hermann Gmneiner International College</p>
+								<p>Tema, Ghana</p>
+
+								<br>
+								<h2><i class="fas fa-book"></i>  Subjects</h2>
+								<p>Additional Mathematics</p>
+								<p>Chemistry</p>
+								<p>Computer Science</p>
+								<p>Economics</p>
+								<p>English</p>
+								<p>French</p>
+								<p>Geography</p>
+								<p>Literature</p>
+								<p>Mathematics</p>
+								<p>Physics</p>
+							    </div>
+						    </div>
+						    <!-- timeline end -->
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+</section>
+<!-- about section -->
+
+<!-- service section -->
+<section class="service-section section" id="services">
+	<div class="container">
+		<div class="row"> 
+			
+			<div class="section-title">
+				<h2 data-heading="Services">What I do</h2>
+			</div>
+		</div>
+		<div class="row">
+			<!-- service 1 -->
+			<div class="service-item">
+				<div class="service-item-inner outer-shadow">
+					<div class="icon inner-shadow">
+						<i class="fa fa-microchip"></i>
+					</div>
+					<h3>Circuit Design</h3>
+					<p>Designing and building electronic circuits for projects</p>
+				</div>
+			</div>
+			<!-- service 1 end -->
+			<!-- service 2 -->
+			<div class="service-item">
+				<div class="service-item-inner outer-shadow">
+					<div class="icon inner-shadow">
+						<i class="fa fa-drafting-compass"></i>
+					</div>
+					<h3>Computer Aided Design (CAD)</h3>
+					<p>Creating precise 3D models and technical drawings for prototypes</p>
+				</div>
+			</div>
+			<!-- service 2 end -->
+			<!-- service 3 -->
+			<div class="service-item">
+				<div class="service-item-inner outer-shadow">
+					<div class="icon inner-shadow">
+						<i class="fa fa-code"></i>
+					</div>
+					<h3>Programming & Embedded Systems Development</h3>
+					<p>Developing code for microcontrollers for automation, robotics, and smart devices</p>
+				</div>
+			</div>
+			<!-- service 3 end -->
+			<!-- service 4 -->
+			<div class="service-item">
+				<div class="service-item-inner outer-shadow">
+					<div class="icon inner-shadow">
+						<i class="fa fa-camera"></i>
+					</div>
+					<h3>Photography</h3>
+					<p>Capturing high-quality images for events, potraits or products</p>
+				</div>
+			</div>
+			<!-- service 4 end -->
+			<!-- service 5 -->
+			<div class="service-item">
+				<div class="service-item-inner outer-shadow">
+					<div class="icon inner-shadow">
+						<i class="fa fa-video"></i>
+					</div>
+					<h3>Videography</h3>
+					<p>Shoot and edit videos that bring ideas, events, and projects to life</p>
+				</div>
+			</div>
+			<!-- service 5 end -->
+			<!-- service 6 -->
+			<div class="service-item">
+				<div class="service-item-inner outer-shadow">
+					<div class="icon inner-shadow">
+						<i class="fas fa-chalkboard-teacher"></i>
+					</div>
+					<h3>Tutorial</h3>
+					<p>Designing creative visuals and animations to communicate concepts in a dynamic and artistic way</p>
+				</div>
+			</div>
+			<!-- service 6 end -->
+
+
+
+		</div>
+	</div>
+</section>
+<!-- service section -->
+
+<!-- portfolio section-->
+ <section class="portfolio-section section active" id="portfolio">
+ 	<div class="container">
+ 		<div class="row">
+ 			<div class="section-title">
+ 				<h2>Latest Works</h2>
+ 			</div>
+ 		</div>
+
+ 		<div class="row">
+ 			<div class="portfolio-filter">
+ 				<span class="filter-item outer-shadow active" data-target="all">All</span>
+ 				<span class="filter-item" data-target="engineering">Engineering Projects</span>
+ 				<span class="filter-item" data-target="photos">Photography/Videography</span>
+ 				<span class="filter-item" data-target="design">Visual Designs</span>
+				<span class="filter-item" data-target="website">Websites</span>
+ 			</div>
+ 		</div>
+
+ 		<!-- portfolio items -->
+ 		<div class="row portfolio-items">
+ 			<!-- Personal Portfolio Website -->
+ 			<div class="portfolio-item" data-category="website">
+ 				<div class="portfolio-item-inner outer-shadow">
+ 					<div class="portfolio-item-img">
+ 						<img src="img/portfolio/thumb/project-1.png" alt="portfolio" 
+ 						data-screenshots="img/portfolio/large/project-1/1.png,
+ 										  img/portfolio/large/project-1/2.png,
+ 										  img/portfolio/large/project-1/3.png,
+ 										  img/portfolio/large/project-1/4.png,
+ 										  img/portfolio/large/project-1/5.png,
+ 										  img/portfolio/large/project-1/6.png">
+ 										  
+ 						<span class="view-project">View project</span>
+ 					</div>
+ 					<p class="portfolio-item-title">Personal Portfolio Website</p>
+ 				<!-- details -->
+ 				<div class="portfolio-item-details">
+ 					<div class="row">
+ 						<div class="description">
+ 							<h3>Project Brief:</h3>
+ 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
+ 						</div>
+ 						<div class="info">
+ 							<h3>Project Info</h3>
+ 							<ul>
+ 								<li>Date - <span>2020</span></li>
+ 								<li>Tools - <span>html</span></li>
+ 								<li>Duration - <span>2020</span></li>
+ 								<li>Web - <span><a href="#"></a></span></li>
+ 								
+
+ 							</ul>
+
+
+ 						 </div>
+ 					</div>
+ 					
+ 				</div>
+ 				<!-- details end -->
+
+ 				</div>
+ 			</div>
+ 			<!-- new item -->
+
+ 			<!-- Digital Artwork 1 -->
+ 			<div class="portfolio-item" data-category="design">
+ 				<div class="portfolio-item-inner outer-shadow">
+ 					<div class="portfolio-item-img">
+ 						<img src="img/portfolio/large/art-1/0.jpg" alt="portfolio" 
+ 						data-screenshots="img/portfolio/large/art-1/1.jpg,
+ 										  img/portfolio/large/art-1/2.jpg,
+ 										  img/portfolio/large/art-1/3.jpg,
+ 										  img/portfolio/large/art-1/4.jpg,
+ 										  img/portfolio/large/art-1/5.jpg,
+ 										  img/portfolio/large/art-1/6.jpg">
+ 										  
+ 						<span class="view-project">View project</span>
+ 					</div>
+ 					<p class="portfolio-item-title">Digital Artwork</p>
+ 				<!-- details -->
+ 				<div class="portfolio-item-details">
+ 					<div class="row">
+ 						<div class="description">
+ 							<h3>Project Brief:</h3>
+ 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
+ 						</div>
+ 						<div class="info">
+ 							<h3>Project Info</h3>
+ 							<ul>
+ 								<li>Date - <span>2020</span></li>
+ 								<li>Tools - <span>html</span></li>
+ 								<li>Duration - <span>2020</span></li>
+ 								<li>Web - <span><a href="#"></a></span></li>
+ 								
+
+ 							</ul>
+
+
+ 						 </div>
+ 					</div>
+ 					
+ 				</div>
+ 				<!-- details end -->
+
+ 				</div>
+ 			</div>
+			<!-- Digital Artwork 1 -->
+
+ 			<!-- Digital Artwork 2 -->
+			 <div class="portfolio-item" data-category="design">
+ 				<div class="portfolio-item-inner outer-shadow">
+ 					<div class="portfolio-item-img">
+ 						<img src="img/portfolio/large/art-1/0.jpg" alt="portfolio" 
+ 						data-screenshots="img/portfolio/large/art-1/1.jpg,
+ 										  img/portfolio/large/art-1/2.jpg,
+ 										  img/portfolio/large/art-1/3.jpg,
+ 										  img/portfolio/large/art-1/4.jpg,
+ 										  img/portfolio/large/art-1/5.jpg,
+ 										  img/portfolio/large/art-1/6.jpg">
+ 										  
+ 						<span class="view-project">View project</span>
+ 					</div>
+ 					<p class="portfolio-item-title">Digital Artwork 2</p>
+ 				<!-- details -->
+ 				<div class="portfolio-item-details">
+ 					<div class="row">
+ 						<div class="description">
+ 							<h3>Project Brief:</h3>
+ 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
+ 						</div>
+ 						<div class="info">
+ 							<h3>Project Info</h3>
+ 							<ul>
+ 								<li>Date - <span>2020</span></li>
+ 								<li>Tools - <span>html</span></li>
+ 								<li>Duration - <span>2020</span></li>
+ 								<li>Web - <span><a href="#"></a></span></li>
+ 								
+
+ 							</ul>
+
+
+ 						 </div>
+ 					</div>
+ 					
+ 				</div>
+ 				<!-- details end -->
+
+ 				</div>
+ 			</div>
+			<!-- Digital Artwork 2 -->
+
+			<!-- Digital Artwork 3 -->
+			<div class="portfolio-item" data-category="design">
+ 				<div class="portfolio-item-inner outer-shadow">
+ 					<div class="portfolio-item-img">
+ 						<img src="img/portfolio/large/art-1/0.jpg" alt="portfolio" 
+ 						data-screenshots="img/portfolio/large/art-1/1.jpg,
+ 										  img/portfolio/large/art-1/2.jpg,
+ 										  img/portfolio/large/art-1/3.jpg,
+ 										  img/portfolio/large/art-1/4.jpg,
+ 										  img/portfolio/large/art-1/5.jpg,
+ 										  img/portfolio/large/art-1/6.jpg">
+ 										  
+ 						<span class="view-project">View project</span>
+ 					</div>
+ 					<p class="portfolio-item-title">Digital Artwork 3</p>
+ 				<!-- details -->
+ 				<div class="portfolio-item-details">
+ 					<div class="row">
+ 						<div class="description">
+ 							<h3>Project Brief:</h3>
+ 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
+ 						</div>
+ 						<div class="info">
+ 							<h3>Project Info</h3>
+ 							<ul>
+ 								<li>Date - <span>2020</span></li>
+ 								<li>Tools - <span>html</span></li>
+ 								<li>Duration - <span>2020</span></li>
+ 								<li>Web - <span><a href="#"></a></span></li>
+ 								
+
+ 							</ul>
+
+
+ 						 </div>
+ 					</div>
+ 					
+ 				</div>
+ 				<!-- details end -->
+
+ 				</div>
+ 			</div>
+			<!-- Digital Artwork 3 -->
+
+			<!-- Digital Artwork 4 -->
+			<div class="portfolio-item" data-category="design">
+ 				<div class="portfolio-item-inner outer-shadow">
+ 					<div class="portfolio-item-img">
+ 						<img src="img/portfolio/large/art-1/0.jpg" alt="portfolio" 
+ 						data-screenshots="img/portfolio/large/art-1/1.jpg,
+ 										  img/portfolio/large/art-1/2.jpg,
+ 										  img/portfolio/large/art-1/3.jpg,
+ 										  img/portfolio/large/art-1/4.jpg,
+ 										  img/portfolio/large/art-1/5.jpg,
+ 										  img/portfolio/large/art-1/6.jpg">
+ 										  
+ 						<span class="view-project">View project</span>
+ 					</div>
+ 					<p class="portfolio-item-title">Digital Artwork 4</p>
+ 				<!-- details -->
+ 				<div class="portfolio-item-details">
+ 					<div class="row">
+ 						<div class="description">
+ 							<h3>Project Brief:</h3>
+ 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
+ 						</div>
+ 						<div class="info">
+ 							<h3>Project Info</h3>
+ 							<ul>
+ 								<li>Date - <span>2020</span></li>
+ 								<li>Tools - <span>html</span></li>
+ 								<li>Duration - <span>2020</span></li>
+ 								<li>Web - <span><a href="#"></a></span></li>
+ 								
+
+ 							</ul>
+
+
+ 						 </div>
+ 					</div>
+ 					
+ 				</div>
+ 				<!-- details end -->
+
+ 				</div>
+ 			</div>
+			<!-- Digital Artwork 4 -->
+
+			<!-- Digital Artwork 5 -->
+			<div class="portfolio-item" data-category="design">
+ 				<div class="portfolio-item-inner outer-shadow">
+ 					<div class="portfolio-item-img">
+ 						<img src="img/portfolio/large/art-1/0.jpg" alt="portfolio" 
+ 						data-screenshots="img/portfolio/large/art-1/1.jpg,
+ 										  img/portfolio/large/art-1/2.jpg,
+ 										  img/portfolio/large/art-1/3.jpg,
+ 										  img/portfolio/large/art-1/4.jpg,
+ 										  img/portfolio/large/art-1/5.jpg,
+ 										  img/portfolio/large/art-1/6.jpg">
+ 										  
+ 						<span class="view-project">View project</span>
+ 					</div>
+ 					<p class="portfolio-item-title">Digital Artwork 5</p>
+ 				<!-- details -->
+ 				<div class="portfolio-item-details">
+ 					<div class="row">
+ 						<div class="description">
+ 							<h3>Project Brief:</h3>
+ 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
+ 						</div>
+ 						<div class="info">
+ 							<h3>Project Info</h3>
+ 							<ul>
+ 								<li>Date - <span>2020</span></li>
+ 								<li>Tools - <span>html</span></li>
+ 								<li>Duration - <span>2020</span></li>
+ 								<li>Web - <span><a href="#"></a></span></li>
+ 								
+
+ 							</ul>
+
+
+ 						 </div>
+ 					</div>
+ 					
+ 				</div>
+ 				<!-- details end -->
+
+ 				</div>
+ 			</div>
+			<!-- Digital Artwork 5 -->
+
+			<!-- Digital Artwork 6 -->
+			<div class="portfolio-item" data-category="design">
+ 				<div class="portfolio-item-inner outer-shadow">
+ 					<div class="portfolio-item-img">
+ 						<img src="img/portfolio/large/art-1/0.jpg" alt="portfolio" 
+ 						data-screenshots="img/portfolio/large/art-1/1.jpg,
+ 										  img/portfolio/large/art-1/2.jpg,
+ 										  img/portfolio/large/art-1/3.jpg,
+ 										  img/portfolio/large/art-1/4.jpg,
+ 										  img/portfolio/large/art-1/5.jpg,
+ 										  img/portfolio/large/art-1/6.jpg">
+ 										  
+ 						<span class="view-project">View project</span>
+ 					</div>
+ 					<p class="portfolio-item-title">Digital Artwork 5</p>
+ 				<!-- details -->
+ 				<div class="portfolio-item-details">
+ 					<div class="row">
+ 						<div class="description">
+ 							<h3>Project Brief:</h3>
+ 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
+ 						</div>
+ 						<div class="info">
+ 							<h3>Project Info</h3>
+ 							<ul>
+ 								<li>Date - <span>2020</span></li>
+ 								<li>Tools - <span>html</span></li>
+ 								<li>Duration - <span>2020</span></li>
+ 								<li>Web - <span><a href="#"></a></span></li>
+ 								
+
+ 							</ul>
+
+
+ 						 </div>
+ 					</div>
+ 					
+ 				</div>
+ 				<!-- details end -->
+
+ 				</div>
+ 			</div>
+			<!-- Digital Artwork 6 -->
+
+ 			<!-- Engineering Project 1 -->
+ 			<div class="portfolio-item" data-category="engineering">
+ 				<div class="portfolio-item-inner outer-shadow">
+ 					<div class="portfolio-item-img">
+ 						<img src="img/eng.png" alt="portfolio" 
+ 						data-screenshots="img/portfolio/large/art-1/Parallax.gif">
+
+ 										  
+ 						<span class="view-project">View project</span>
+ 					</div>
+ 					<p class="portfolio-item-title">Final Year Capstone</p>
+ 				<!-- details -->
+ 				<div class="portfolio-item-details">
+ 					<div class="row">
+ 						<div class="description">
+ 							<h3>Project Brief:</h3>
+ 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
+ 						</div>
+ 						<div class="info">
+ 							<h3>Project Info</h3>
+ 							<ul>
+ 								<li>Date - <span>2020</span></li>
+ 								<li>Tools - <span>html</span></li>
+ 								<li>Duration - <span>2020</span></li>
+ 								<li>Web - <span><a href="#">www.blah.com</a></span></li>
+ 								
+
+ 							</ul>
+
+
+ 						 </div>
+ 					</div>
+ 					
+ 				</div>
+ 				<!-- details end -->
+
+ 				</div>
+ 			</div>
+
+			<!-- Engineering Project 2 -->
+ 			<div class="portfolio-item" data-category="engineering">
+ 				<div class="portfolio-item-inner outer-shadow">
+ 					<div class="portfolio-item-img">
+ 						<img src="img/eng.png" alt="portfolio" 
+ 						data-screenshots="img/portfolio/large/art-1/Parallax.gif">
+
+ 										  
+ 						<span class="view-project">View project</span>
+ 					</div>
+ 					<p class="portfolio-item-title">Final Year Capstone</p>
+ 				<!-- details -->
+ 				<div class="portfolio-item-details">
+ 					<div class="row">
+ 						<div class="description">
+ 							<h3>Project Brief:</h3>
+ 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
+ 						</div>
+ 						<div class="info">
+ 							<h3>Project Info</h3>
+ 							<ul>
+ 								<li>Date - <span>2020</span></li>
+ 								<li>Tools - <span>html</span></li>
+ 								<li>Duration - <span>2020</span></li>
+ 								<li>Web - <span><a href="#">www.blah.com</a></span></li>
+ 								
+
+ 							</ul>
+
+
+ 						 </div>
+ 					</div>
+ 					
+ 				</div>
+ 				<!-- details end -->
+
+ 				</div>
+ 			</div>
+			<!-- Engineering Project 2 -->
+
+			<!-- Engineering Project 3 -->
+ 			<div class="portfolio-item" data-category="engineering">
+ 				<div class="portfolio-item-inner outer-shadow">
+ 					<div class="portfolio-item-img">
+ 						<img src="img/eng.png" alt="portfolio" 
+ 						data-screenshots="img/portfolio/large/art-1/Parallax.gif">
+
+ 										  
+ 						<span class="view-project">View project</span>
+ 					</div>
+ 					<p class="portfolio-item-title">Engineering Project 3</p>
+ 				<!-- details -->
+ 				<div class="portfolio-item-details">
+ 					<div class="row">
+ 						<div class="description">
+ 							<h3>Project Brief:</h3>
+ 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
+ 						</div>
+ 						<div class="info">
+ 							<h3>Project Info</h3>
+ 							<ul>
+ 								<li>Date - <span>2020</span></li>
+ 								<li>Tools - <span>html</span></li>
+ 								<li>Duration - <span>2020</span></li>
+ 								<li>Web - <span><a href="#">www.blah.com</a></span></li>
+ 								
+
+ 							</ul>
+
+
+ 						 </div>
+ 					</div>
+ 					
+ 				</div>
+ 				<!-- details end -->
+
+ 				</div>
+ 			</div>
+			<!-- Engineering Project 3 -->
+
+			<!-- Engineering Project 4 -->
+ 			<div class="portfolio-item" data-category="engineering">
+ 				<div class="portfolio-item-inner outer-shadow">
+ 					<div class="portfolio-item-img">
+ 						<img src="img/eng.png" alt="portfolio" 
+ 						data-screenshots="img/portfolio/large/art-1/Parallax.gif">
+
+ 										  
+ 						<span class="view-project">View project</span>
+ 					</div>
+ 					<p class="portfolio-item-title">Engineering Project 4</p>
+ 				<!-- details -->
+ 				<div class="portfolio-item-details">
+ 					<div class="row">
+ 						<div class="description">
+ 							<h3>Project Brief:</h3>
+ 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
+ 						</div>
+ 						<div class="info">
+ 							<h3>Project Info</h3>
+ 							<ul>
+ 								<li>Date - <span>2020</span></li>
+ 								<li>Tools - <span>html</span></li>
+ 								<li>Duration - <span>2020</span></li>
+ 								<li>Web - <span><a href="#">www.blah.com</a></span></li>
+ 								
+
+ 							</ul>
+
+
+ 						 </div>
+ 					</div>
+ 					
+ 				</div>
+ 				<!-- details end -->
+
+ 				</div>
+ 			</div>
+			<!-- Engineering Project 4 -->
+
+			<!-- Engineering Project 5 -->
+ 			<div class="portfolio-item" data-category="engineering">
+ 				<div class="portfolio-item-inner outer-shadow">
+ 					<div class="portfolio-item-img">
+ 						<img src="img/eng.png" alt="portfolio" 
+ 						data-screenshots="img/portfolio/large/art-1/Parallax.gif">
+
+ 										  
+ 						<span class="view-project">View project</span>
+ 					</div>
+ 					<p class="portfolio-item-title">Engineering Project 5</p>
+ 				<!-- details -->
+ 				<div class="portfolio-item-details">
+ 					<div class="row">
+ 						<div class="description">
+ 							<h3>Project Brief:</h3>
+ 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
+ 						</div>
+ 						<div class="info">
+ 							<h3>Project Info</h3>
+ 							<ul>
+ 								<li>Date - <span>2020</span></li>
+ 								<li>Tools - <span>html</span></li>
+ 								<li>Duration - <span>2020</span></li>
+ 								<li>Web - <span><a href="#">www.blah.com</a></span></li>
+ 								
+
+ 							</ul>
+
+
+ 						 </div>
+ 					</div>
+ 					
+ 				</div>
+ 				<!-- details end -->
+
+ 				</div>
+ 			</div>
+			<!-- Engineering Project 5 -->
+
+			<!-- Engineering Project 6 -->
+ 			<div class="portfolio-item" data-category="engineering">
+ 				<div class="portfolio-item-inner outer-shadow">
+ 					<div class="portfolio-item-img">
+ 						<img src="img/eng.png" alt="portfolio" 
+ 						data-screenshots="img/portfolio/large/art-1/Parallax.gif">
+
+ 										  
+ 						<span class="view-project">View project</span>
+ 					</div>
+ 					<p class="portfolio-item-title">Engineering Project 5</p>
+ 				<!-- details -->
+ 				<div class="portfolio-item-details">
+ 					<div class="row">
+ 						<div class="description">
+ 							<h3>Project Brief:</h3>
+ 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
+ 						</div>
+ 						<div class="info">
+ 							<h3>Project Info</h3>
+ 							<ul>
+ 								<li>Date - <span>2020</span></li>
+ 								<li>Tools - <span>html</span></li>
+ 								<li>Duration - <span>2020</span></li>
+ 								<li>Web - <span><a href="#">www.blah.com</a></span></li>
+ 								
+
+ 							</ul>
+
+
+ 						 </div>
+ 					</div>
+ 					
+ 				</div>
+ 				<!-- details end -->
+
+ 				</div>
+ 			</div>
+			<!-- Engineering Project 6 -->
+
+			<!-- Photography Project 1 -->
+ 			<div class="portfolio-item" data-category="photos">
+ 				<div class="portfolio-item-inner outer-shadow">
+ 					<div class="portfolio-item-img">
+ 						<img src="img/photo.jpg" alt="portfolio" 
+ 						data-screenshots="img/portfolio/large/project-4/1.png">
+ 										  
+ 						<span class="view-project">View project</span>
+ 					</div>
+ 					<p class="portfolio-item-title">Photography Project 1</p>
+ 				<!-- details -->
+ 				<div class="portfolio-item-details">
+ 					<div class="row">
+ 						<div class="description">
+ 							<h3>Project Brief:</h3>
+ 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
+ 						</div>
+ 						<div class="info">
+ 							<h3>Project Info</h3>
+ 							<ul>
+ 								<li>Date - <span>2020</span></li>
+ 								<li>Tools - <span>html</span></li>
+ 								<li>Duration - <span>2020</span></li>
+ 								<li>Web - <span><a href="#"></a></span></li>
+ 								
+
+ 							</ul>
+
+
+ 						 </div>
+ 					</div>
+ 					
+ 				</div>
+ 				<!-- details end -->
+
+ 				</div>
+ 			</div>
+ 			<!-- Photography Project 1 -->
+
+			<!-- Photography Project 2 -->
+ 			<div class="portfolio-item" data-category="photos">
+ 				<div class="portfolio-item-inner outer-shadow">
+ 					<div class="portfolio-item-img">
+ 						<img src="img/photo.jpg" alt="portfolio" 
+ 						data-screenshots="img/portfolio/large/project-4/1.png">
+ 										  
+ 						<span class="view-project">View project</span>
+ 					</div>
+ 					<p class="portfolio-item-title">Photography Project 2</p>
+ 				<!-- details -->
+ 				<div class="portfolio-item-details">
+ 					<div class="row">
+ 						<div class="description">
+ 							<h3>Project Brief:</h3>
+ 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
+ 						</div>
+ 						<div class="info">
+ 							<h3>Project Info</h3>
+ 							<ul>
+ 								<li>Date - <span>2020</span></li>
+ 								<li>Tools - <span>html</span></li>
+ 								<li>Duration - <span>2020</span></li>
+ 								<li>Web - <span><a href="#"></a></span></li>
+ 								
+
+ 							</ul>
+
+
+ 						 </div>
+ 					</div>
+ 					
+ 				</div>
+ 				<!-- details end -->
+
+ 				</div>
+ 			</div>
+ 			<!-- Photography Project 2 -->
+
+			<!-- Photography Project 3 -->
+ 			<div class="portfolio-item" data-category="photos">
+ 				<div class="portfolio-item-inner outer-shadow">
+ 					<div class="portfolio-item-img">
+ 						<img src="img/photo.jpg" alt="portfolio" 
+ 						data-screenshots="img/portfolio/large/project-4/1.png">
+ 										  
+ 						<span class="view-project">View project</span>
+ 					</div>
+ 					<p class="portfolio-item-title">Photography Project 3</p>
+ 				<!-- details -->
+ 				<div class="portfolio-item-details">
+ 					<div class="row">
+ 						<div class="description">
+ 							<h3>Project Brief:</h3>
+ 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
+ 						</div>
+ 						<div class="info">
+ 							<h3>Project Info</h3>
+ 							<ul>
+ 								<li>Date - <span>2020</span></li>
+ 								<li>Tools - <span>html</span></li>
+ 								<li>Duration - <span>2020</span></li>
+ 								<li>Web - <span><a href="#"></a></span></li>
+ 								
+
+ 							</ul>
+
+
+ 						 </div>
+ 					</div>
+ 					
+ 				</div>
+ 				<!-- details end -->
+
+ 				</div>
+ 			</div>
+ 			<!-- Photography Project 3 -->
+
+			<!-- Photography Project 4 -->
+ 			<div class="portfolio-item" data-category="photos">
+ 				<div class="portfolio-item-inner outer-shadow">
+ 					<div class="portfolio-item-img">
+ 						<img src="img/photo.jpg" alt="portfolio" 
+ 						data-screenshots="img/portfolio/large/project-4/1.png">
+ 										  
+ 						<span class="view-project">View project</span>
+ 					</div>
+ 					<p class="portfolio-item-title">Photography Project 4</p>
+ 				<!-- details -->
+ 				<div class="portfolio-item-details">
+ 					<div class="row">
+ 						<div class="description">
+ 							<h3>Project Brief:</h3>
+ 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
+ 						</div>
+ 						<div class="info">
+ 							<h3>Project Info</h3>
+ 							<ul>
+ 								<li>Date - <span>2020</span></li>
+ 								<li>Tools - <span>html</span></li>
+ 								<li>Duration - <span>2020</span></li>
+ 								<li>Web - <span><a href="#"></a></span></li>
+ 								
+
+ 							</ul>
+
+
+ 						 </div>
+ 					</div>
+ 					
+ 				</div>
+ 				<!-- details end -->
+
+ 				</div>
+ 			</div>
+ 			<!-- Photography Project 4 -->
+
+			<!-- Photography Project 5 -->
+ 			<div class="portfolio-item" data-category="photos">
+ 				<div class="portfolio-item-inner outer-shadow">
+ 					<div class="portfolio-item-img">
+ 						<img src="img/photo.jpg" alt="portfolio" 
+ 						data-screenshots="img/portfolio/large/project-4/1.png">
+ 										  
+ 						<span class="view-project">View project</span>
+ 					</div>
+ 					<p class="portfolio-item-title">Photography Project 5</p>
+ 				<!-- details -->
+ 				<div class="portfolio-item-details">
+ 					<div class="row">
+ 						<div class="description">
+ 							<h3>Project Brief:</h3>
+ 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
+ 						</div>
+ 						<div class="info">
+ 							<h3>Project Info</h3>
+ 							<ul>
+ 								<li>Date - <span>2020</span></li>
+ 								<li>Tools - <span>html</span></li>
+ 								<li>Duration - <span>2020</span></li>
+ 								<li>Web - <span><a href="#"></a></span></li>
+ 								
+
+ 							</ul>
+
+
+ 						 </div>
+ 					</div>
+ 					
+ 				</div>
+ 				<!-- details end -->
+
+ 				</div>
+ 			</div>
+ 			<!-- Photography Project 5 -->
+
+			<!-- Photography Project 6 -->
+ 			<div class="portfolio-item" data-category="photos">
+ 				<div class="portfolio-item-inner outer-shadow">
+ 					<div class="portfolio-item-img">
+ 						<img src="img/photo.jpg" alt="portfolio" 
+ 						data-screenshots="img/portfolio/large/project-4/1.png">
+ 										  
+ 						<span class="view-project">View project</span>
+ 					</div>
+ 					<p class="portfolio-item-title">Photography Project 6</p>
+ 				<!-- details -->
+ 				<div class="portfolio-item-details">
+ 					<div class="row">
+ 						<div class="description">
+ 							<h3>Project Brief:</h3>
+ 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
+ 						</div>
+ 						<div class="info">
+ 							<h3>Project Info</h3>
+ 							<ul>
+ 								<li>Date - <span>2020</span></li>
+ 								<li>Tools - <span>html</span></li>
+ 								<li>Duration - <span>2020</span></li>
+ 								<li>Web - <span><a href="#"></a></span></li>
+ 								
+
+ 							</ul>
+
+
+ 						 </div>
+ 					</div>
+ 					
+ 				</div>
+ 				<!-- details end -->
+
+ 				</div>
+ 			</div>
+ 			<!-- Photography Project 6 -->
+
+			
+			<!-- Engineering Project 1 -->
+
+ 			<!-- item 2 ends -->
+ 			<!-- item 3
+ 			<div class="portfolio-item" data-category="e-commerce">
+ 				<div class="portfolio-item-inner outer-shadow">
+ 					<div class="portfolio-item-img">
+ 						<img src="img/portfolio/thumb/project-3.png" alt="portfolio" 
+ 						data-screenshots="img/portfolio/large/project-3/1.png,
+ 										  img/portfolio/large/project-3/2.png,
+ 										  img/portfolio/large/project-3/3.png,
+ 										  img/portfolio/large/project-3/4.png,
+ 										  img/portfolio/large/project-3/5.png,">
+ 										  
+ 						<span class="view-project">View project</span>
+ 					</div>
+ 					<p class="portfolio-item-title">Product landing page</p> -->
+ 				<!-- details -->
+ 				<!-- <div class="portfolio-item-details">
+ 					<div class="row">
+ 						<div class="description">
+ 							<h3>Project Brief:</h3>
+ 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
+ 						</div>
+ 						<div class="info">
+ 							<h3>Project Info</h3>
+ 							<ul>
+ 								<li>Date - <span>2020</span></li>
+ 								<li>Tools - <span>html</span></li>
+ 								<li>Duration - <span>2020</span></li>
+ 								<li>Web - <span><a href="#"></a></span></li>
+ 								
+
+ 							</ul>
+
+
+ 						 </div>
+ 					</div>
+ 					
+ 				</div> -->
+ 				<!-- details end -->
+
+ 				<!-- </div>
+ 			</div> -->
+ 			<!-- item 3 ends -->
+ 			
+ 			<!-- Web Project 1-->
+ 			<div class="portfolio-item" data-category="website">
+ 				<div class="portfolio-item-inner outer-shadow">
+ 					<div class="portfolio-item-img">
+ 						<img src="img/portfolio/thumb/project-5.png" alt="portfolio" 
+ 						data-screenshots="img/portfolio/large/project-5/1.png">
+ 										  
+ 						<span class="view-project">View project</span>
+ 					</div>
+ 					<p class="portfolio-item-title">Animation Projects</p>
+ 				<!-- details -->
+ 				<div class="portfolio-item-details">
+ 					<div class="row">
+ 						<div class="description">
+ 							<h3>Project Brief:</h3>
+ 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
+ 						</div>
+ 						<div class="info">
+ 							<h3>Project Info</h3>
+ 							<ul>
+ 								<li>Date - <span>2020</span></li>
+ 								<li>Tools - <span>html</span></li>
+ 								<li>Duration - <span>2020</span></li>
+ 								<li>Web - <span><a href="#"></a></span></li>
+ 								
+
+ 							</ul>
+
+
+ 						 </div>
+ 					</div>
+ 					
+ 				</div>
+ 				<!-- details end -->
+
+ 				</div>
+ 			</div>
+ 			<!-- item 5 ends -->
+ 			<!-- item 6 -->
+ 			<div class="portfolio-item" data-category="website">
+ 				<div class="portfolio-item-inner outer-shadow">
+ 					<div class="portfolio-item-img">
+ 						<img src="img/portfolio/thumb/project-6.png" alt="portfolio" 
+ 						data-screenshots="img/portfolio/large/project-6/1.png,
+ 										  img/portfolio/large/project-6/2.png,
+ 										  img/portfolio/large/project-6/3.png">
+ 										  
+ 						<span class="view-project">View project</span>
+ 					</div>
+ 					<p class="portfolio-item-title">National Geography Website</p>
+ 				<!-- details -->
+ 				<div class="portfolio-item-details">
+ 					<div class="row">
+ 						<div class="description">
+ 							<h3>Project Brief:</h3>
+ 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
+ 						</div>
+ 						<div class="info">
+ 							<h3>Project Info</h3>
+ 							<ul>
+ 								<li>Date - <span>2020</span></li>
+ 								<li>Tools - <span>html</span></li>
+ 								<li>Duration - <span>2020</span></li>
+ 								<li>Web - <span><a href="#"></a></span></li>
+ 								
+
+ 							</ul>
+
+
+ 						 </div>
+ 					</div>
+ 					
+ 				</div>
+ 				<!-- details end -->
+
+ 				</div>
+ 			</div>
+ 			<!-- item 6 ends -->
+ 			<!-- item 7 -->
+ 			<div class="portfolio-item" data-category="mobile-app">
+ 				<div class="portfolio-item-inner outer-shadow">
+ 					<div class="portfolio-item-img">
+ 						<img src="img/portfolio/thumb/project-7.png" alt="portfolio" 
+ 						data-screenshots="img/portfolio/large/project-7/1.png,
+ 										  img/portfolio/large/project-7/2.png">
+ 										  
+ 						<span class="view-project">View project</span>
+ 					</div>
+ 					<p class="portfolio-item-title">Blah App</p>
+ 				<!-- details -->
+ 				<div class="portfolio-item-details">
+ 					<div class="row">
+ 						<div class="description">
+ 							<h3>Project Brief:</h3>
+ 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
+ 						</div>
+ 						<div class="info">
+ 							<h3>Project Info</h3>
+ 							<ul>
+ 								<li>Date - <span>2020</span></li>
+ 								<li>Tools - <span>html</span></li>
+ 								<li>Duration - <span>2020</span></li>
+ 								<li>Playstore link - <span><a href="#"></a></span></li>
+ 								
+
+ 							</ul>
+
+
+ 						 </div>
+ 					</div>
+ 					
+ 				</div>
+ 				<!-- details end -->
+
+ 				</div>
+ 			</div>
+ 			<!-- item 7 ends -->
+ 			<!-- item 8 -->
+ 			<div class="portfolio-item" data-category="design">
+ 				<div class="portfolio-item-inner outer-shadow">
+ 					<div class="portfolio-item-img">
+ 						<img src="img/portfolio/thumb/project-8.png" alt="portfolio" 
+ 						data-screenshots="img/portfolio/large/project-8/1.png,
+ 										  img/portfolio/large/project-8/2.png">
+ 										  
+ 						<span class="view-project">View project</span>
+ 					</div>
+ 					<p class="portfolio-item-title">Digital Artwork 2</p>
+ 				<!-- details -->
+ 				<div class="portfolio-item-details">
+ 					<div class="row">
+ 						<div class="description">
+ 							<h3>Project Brief:</h3>
+ 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
+ 						</div>
+ 						<div class="info">
+ 							<h3>Project Info</h3>
+ 							<ul>
+ 								<li>Date - <span>2020</span></li>
+ 								<li>Tools - <span>html</span></li>
+ 								<li>Duration - <span>2020</span></li>
+ 								<li>Playstore link - <span><a href="#"></a></span></li>
+ 								
+
+ 							</ul>
+
+
+ 						 </div>
+ 					</div>
+ 					
+ 				</div>
+ 				<!-- details end -->
+
+ 				</div>
+ 			</div>
+ 			<!-- item 7 ends -->
+ 		</div>
+ 	</div>
+
+ </section>
+<!-- popup -->
+ <div class="pp portfolio-popup">
+ 	<div class="pp-details">
+ 		<div class="pp-details-inner">
+ 			<div class="pp-title">
+ 				<h2>Personal Portfolio</h2>
+ 				<p>Category - <span class="pp-project-category">Web Development</span></p>
+ 			</div>
+ 			<div class="pp-project-details">
+ 				
+ 					<div class="row">
+ 						<div class="description">
+ 							<h3>Project Brief:</h3>
+ 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
+ 						</div>
+ 						<div class="info">
+ 							<h3>Project Info</h3>
+ 							<ul>
+ 								<li>Date - <span>2020</span></li>
+ 								<li>Tools - <span>html</span></li>
+ 								<li>Duration - <span>2020</span></li>
+ 								<li>Playstore link - <span><a href="#"></a></span></li>
+ 								
+
+ 							</ul>
+
+
+ 						 </div>
+ 					</div>
+ 			</div>
+ 		</div>
+ 	</div>
+ 	<div class="separator"></div>
+ 	<div class="pp-main">
+ 		<div class="pp-main-inner">
+ 			<div class="pp-project-details-btn outer-shadow hover-in-shadow">Project Details <i class="fas fa-plus"></i></div>
+ 			<div class="pp-close outer-shadow hover-in-shadow">&times;</div>
+ 			<img src="img/portfolio/large/project-1/1.png" alt="img" class="pp-img outer-shadow">
+ 			<div class="pp-counter">1 of 6</div>
+ 			<div class="pp-loader">
+ 				<div></div>
+ 			</div>
+ 		</div>
+ 		<!-- navigation -->
+ 		<div class="pp-prev"><i class="fas fa-play"></i></div>
+ 		<div class="pp-next"><i class="fas fa-play"></i></div>
+ 	</div>
+ </div>
+ <!-- portfolio section-->
+
+
+ <!-- blog section -->
+ <section class="blog-section section" id="blog">
+ 	<div class="container">
+ 		<div class="row">
+ 			<div class="section-title">
+ 				<h2>Latest Blog Posts</h2> 
+ 			</div>
+ 		</div>
+ 		<div class="row">
+ 			<!-- blog item 1 -->
+ 			<div class="blog-item">
+ 				<div class="blog-item-inner outer-shadow">
+ 					<div class="blog-img">
+ 						<img src="img/blog/1.png" alt="blog">
+ 						<div class="blog-date">7th Nov 2020</div> 						
+ 					</div>
+ 					<div class="blog-info">
+ 						<h4 class="blog-title">Web Design</h4>
+ 						<p class="blog-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+ 						<p class="blog-tags">Tags : <span>Freedom<span></p>
+ 					</div>
+ 					
+ 				</div>
+ 			</div>
+ 			<!-- blog item 1 ends -->
+ 			<!-- blog item 2 -->
+ 			<div class="blog-item">
+ 				<div class="blog-item-inner outer-shadow">
+ 					<div class="blog-img">
+ 						<img src="img/blog/1.png" alt="blog">
+ 						<div class="blog-date">7th Nov 2020</div> 						
+ 					</div>
+ 					<div class="blog-info">
+ 						<h4 class="blog-title">Web Design</h4>
+ 						<p class="blog-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+ 						<p class="blog-tags">Tags : <span>Freedom<span></p>
+ 					</div>
+ 					
+ 				</div>
+ 			</div>
+ 			<!-- blog item 2 ends -->
+ 			<!-- blog item 3 -->
+ 			<div class="blog-item">
+ 				<div class="blog-item-inner outer-shadow">
+ 					<div class="blog-img">
+ 						<img src="img/blog/1.png" alt="blog">
+ 						<div class="blog-date"> 7th Nov 2020</div> 						
+ 					</div>
+ 					<div class="blog-info">
+ 						<h4 class="blog-title">Web Design</h4>
+ 						<p class="blog-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+ 						<p class="blog-tags">Tags : <span>Freedom<span></p>
+ 					</div>
+ 					
+ 				</div>
+ 			</div>
+ 			<!-- blog item 3 ends -->
+ 		</div>
+ 	</div>
+ </section>
+
+<!-- contact section -->
+ <section class="contact-section section" id="contact">
+ 	<div class="container">
+ 		<div class="row">
+ 			<div class="section-title">
+ 				<h2 data-heading="contact">Get in touch</h2>
+ 			</div>
+ 		</div>
+ 		<div class="row">
+ 			<!-- phone number -->
+ 			<div class="contact-item">
+ 				<div class="contact-item-inner outer-shadow">
+ 					<i class="fas fa-phone"></i>
+ 					<span>Phone</span>
+ 					<p>+233 55 129 1688</p>
+ 				</div>
+ 			</div>
+ 			<!-- phone ends -->
+ 			<!-- email address -->
+ 			<div class="contact-item">
+ 				<div class="contact-item-inner outer-shadow">
+ 					<i class="fas fa-envelope"></i>
+ 					<span>Email</span>
+ 					<p>kpents21@gmail.com</p>
+ 				</div>
+ 			</div>
+ 			<!-- email ends -->
+ 			<!-- location -->
+ 			<div class="contact-item">
+ 				<div class="contact-item-inner outer-shadow">
+ 					<i class="fas fa-map-marker-alt"></i>
+ 					<span>Address</span>
+ 					<p>Spintex</p>
+ 				</div>
+ 			</div>
+ 			<!-- location -->
+ 		</div>
+ 		<div class="row">
+ 			<div class="contact-form">
+ 				<form>
+ 					<div class="row">
+ 						<div class="w-50">
+ 							<div class="input-group outer-shadow hover-in-shadow">
+ 								<input type="text" placeholder="Name" class="input-control" required></input>
+ 							</div>
+
+ 							<div class="input-group outer-shadow hover-in-shadow">
+ 								<input type="email" placeholder="Email" class="input-control"required></input>
+ 							</div>
+
+ 							<div class="input-group outer-shadow hover-in-shadow">
+ 								<input type="text" placeholder="Subject" class="input-control"required></input>
+ 							</div>
+ 						</div>
+ 						<div class="w-50">
+ 							<div class="input-group outer-shadow hover-in-shadow">
+ 								<textarea class="input-control" placeholder="Message" required></textarea>
+ 							</div>
+ 							
+ 						</div>
+ 					</div>
+ 					<div class="row">
+ 						<div class="submit-btn">
+ 							<button type="submit" class="btn-1 outer-shadow hover-in-shadow">Submit</button>
+ 						</div>
+ 					</div>
+ 				</form>
+ 			</div>
+ 		</div>
+ 	</div>
+ </section>
+
+
+
+<!-- main js -->
+ <section>
+<script src="js/main.js"></script>
+
+<!-- style switcher js -->
+<script src="js/style-switcher.js"></script>
+
+<!-- effect switcher js -->
+<script src="js/effect-switcher.js"></script>
+
+<!-- typing script -->
+<script src="js/typing.js"></script>
+
+<!-- typing script -->
+<script src="js/fireworks.js"></script>
+
+<!-- page swipe script -->
+<script src="js/swipe.js"></script>
+
+<!-- page swipe script -->
+<script src="js/snow.js"></script> 
+
+<!-- page swipe script -->
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="js/particles.js"></script>   
+</section>
+
+</body>
+</html>
+
