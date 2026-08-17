@@ -1,10 +1,11 @@
   const roles = [
-    "an Electrical Engineer",
-    "a Researcher",
-    "a Photographer",
-    "a Programmer",
-    "an Animator"
-  ];
+  "an Electrical Engineer",
+  "a Researcher",
+  "an Entrepreneur",
+  "a Community Leader",
+  "a Problem Solver"
+];
+
 
   let i = 0;
   let j = 0;

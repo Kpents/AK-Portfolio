@@ -32,6 +32,7 @@ body.dark{
 }
 body{
 	font-size: 16px;
+    font-family: "Montserrat", sans-serif;
 	line-height: 1.5;
 	overflow-x: hidden;
 	background-color: var(--bg-black-50);
